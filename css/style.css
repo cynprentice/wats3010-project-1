@@ -1,0 +1,243 @@
+/* Normalize the styles */
+body {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+
+h4 {
+    padding: 5px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0 20px;
+}
+
+p {
+    padding: 0 5px;
+}
+
+/* Typography */
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0 10px 15px 10px;
+    letter-spacing: .2rem;
+    font-size: 1rem;
+}
+
+p,
+nav,
+div,
+a,
+figcaption,
+span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*
+Page Links in Nav Bar
+*/
+
+/* style the ul so that it will clear the floated elements inside it */
+ul.page-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* style the list items so that they float left */
+.page-links li {
+    float: left;
+}
+
+
+/* style the anchor tag text and alignment and remove the underlines */
+.page-links a {
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* style the hover of the anchor tags */
+.page-links a:hover {
+    background-color: gray;
+    color: white;
+}
+
+.page-links .active {
+    background-color: #ffbf00;
+    color: black;
+}
+
+/* Social links in Nav bar */
+
+ul.social-links {
+    list-style-type: none;
+    /* trick to getting text to center */
+    /* set height = line-height */
+    height: 48px;
+    line-height: 48px;
+}
+
+/* The list items should all be equal in width (5rem) with a background color of #ffbf00 and centered text alignment. */
+
+.social-links li {
+    display: inline-block;
+    width: 5rem;
+    background-color: #ffbf00;
+    text-align: center;
+}
+
+/* The social links a tags should have black text and remove the default underline with text-decoration: none. */
+.social-links a {
+    color: black;
+    text-decoration: none;
+}
+
+/* On hovering the a's the text should be white and hovering the li's the background color should be gray. */
+.social-links a:hover {
+    color: white;
+}
+
+.social-links li:hover {
+    background-color: gray;
+}
+
+/* Nav bar positioning: the Page Links and Social links to appear on the same line in the nav */
+nav {
+    position: relative;
+    height: 48px;
+    background-color: black;
+}
+
+/* 
+-apply position: absolute to both nav-left and nav-right
+-nav-left will be positioned at right:0, top:0 and nav-right will be positioned at left:0, top:0 
+*/
+
+.nav-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.nav-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Big Image Figure: set the margin to 0 on the figure and set the width to 100% and height to 200px. This ensures that the image covers the full width of the page no matter how big the window is. */
+.big-image {
+    margin: 0;
+}
+
+.big-image img {
+    width: 100%;
+    height: 200px;
+}
+
+/* Table layouts are used for both the Recent Blogs and About sections. The table layout will be controlled by the number of rows and columns as well as the amount of content. */
+.table {
+    display: table;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.row {
+    display: table-row;
+}
+
+.col {
+    display: table-cell;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.col p {
+    font-size: 1rem;
+}
+
+/* Float the text in the Recent Blogs section around the images by adding a wrapped class to the images and set them to display:block and float:left. Add 5px padding. See the Skills 1-6 images-float-text for reference. */
+.wrapped {
+    display: block;
+    float: left;
+    padding: 5px;
+}
+
+/* Call to action button styling */
+.cta {
+    width: 11rem;
+    margin: auto;
+    text-align: center;
+}
+
+.cta-button {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    background: red;
+    color: white;
+    border-radius: 30px;
+}
+
+/* Footer
+provide a background color of '#333', height of '4rem' and text color white,give it a padding of 20 and position relative with a width of 100% */
+footer {
+    background-color: #333;
+    height: 4rem;
+    color: white;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+/* 
+
+- set absolute position for both footer-right and footer-left
+- set a property of left: 0.50% on footer-left
+- set a property of right: 0.50% on footer-right
+ */
+
+.footer-left {
+    position: absolute;
+    left: 0.50%;
+}
+
+.footer-right {
+    position: absolute;
+    right: 0.50%;
+}
